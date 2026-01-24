@@ -155,6 +155,7 @@ body {
 }
 /* SIDEBAR */
 
+
 /* CONTENT */
 #content {
 	position: relative;
@@ -291,8 +292,8 @@ body {
 }
 /* NAVBAR */
 
-
 /* MAIN */
+
 #content main {
 	width: 100%;
 	padding: 36px 24px;
@@ -464,7 +465,6 @@ body {
 	background: var(--orange);
 }
 
-
 #content main .table-data .todo {
 	flex-grow: 1;
 	flex-basis: 300px;
@@ -497,7 +497,6 @@ body {
 /* MAIN */
 /* CONTENT */
 
-
 @media screen and (max-width: 768px) {
 	#sidebar {
 		width: 200px;
@@ -512,7 +511,6 @@ body {
 		display: none;
 	}
 }
-
 
 @media screen and (max-width: 576px) {
 	#content nav form .form-input input {
@@ -563,10 +561,7 @@ canvas {
   max-height: 300px;
 }
 
-/* ===== TODO STYLES ===== */
-/* ==========================
-   Variables
-========================== */
+/* TODO STYLES */
 :root {
   --blue: #2196F3;
   --red: #f44336;
@@ -574,10 +569,6 @@ canvas {
   --grey: #e0e0e0;
   --light: #ffffff;
 }
-
-/* ==========================
-   Todo Input Container
-========================== */
 .todo-input {
   display: flex;
   align-items: center;
