@@ -606,10 +606,6 @@ canvas {
   background: #1976d2;
 }
 
-/* ==========================
-   Todo List
-========================== */
-/* ===== TODO STYLES ===== */
 .todo {
   background: var(--light);
   padding: 24px;
@@ -747,8 +743,6 @@ canvas {
 .todo-actions .delete-btn {
   background: var(--red); /* red for ✖ */
 }
-
-/* ===== ENHANCED TODO STYLES ===== */
 .todo {
   background: var(--light);
   padding: 24px;
@@ -899,7 +893,6 @@ canvas {
   color: var(--red);
 }
 
-/* Empty State */
 .todo-empty {
   display: none;
   flex-direction: column;
@@ -919,8 +912,6 @@ canvas {
   font-size: 15px;
   text-align: center;
 }
-
-/* Dark Mode Adjustments */
 body.dark .todo {
   background: var(--light);
   border: 1px solid var(--grey);
