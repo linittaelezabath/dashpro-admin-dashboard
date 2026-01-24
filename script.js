@@ -11,6 +11,7 @@ allSideMenu.forEach(item=> {
 	})
 });
 
+
 // TOGGLE SIDEBAR
 const menuBar = document.querySelector('#content nav .bx.bx-menu');
 const sidebar = document.getElementById('sidebar');
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ==== TODO LIST
+// TODO LIST
 const todoText = document.getElementById("todoText");
 const addTodoBtn = document.getElementById("addTodoBtn");
 const todoList = document.getElementById("todoList");
