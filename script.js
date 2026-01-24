@@ -1,4 +1,3 @@
-
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
 allSideMenu.forEach(item=> {
@@ -11,9 +10,6 @@ allSideMenu.forEach(item=> {
 		li.classList.add('active');
 	})
 });
-
-
-
 
 // TOGGLE SIDEBAR
 const menuBar = document.querySelector('#content nav .bx.bx-menu');
@@ -39,14 +35,12 @@ searchButton.addEventListener('click', function (e) {
 	}
 })
 
-
 if(window.innerWidth < 768) {
 	sidebar.classList.add('hide');
 } else if(window.innerWidth > 576) {
 	searchButtonIcon.classList.replace('bx-x', 'bx-search');
 	searchForm.classList.remove('show');
 }
-
 
 window.addEventListener('resize', function () {
 	if(this.innerWidth > 576) {
@@ -95,29 +89,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ==== TODO LIST
-// ==== SELECT ELEMENTS ====
-// ===== TODO APP (FINAL VERSION) =====
-// ==== SELECT ELEMENTS ====
 const todoText = document.getElementById("todoText");
 const addTodoBtn = document.getElementById("addTodoBtn");
 const todoList = document.getElementById("todoList");
 const todoCount = document.getElementById("todoCount");
 const todoEmpty = document.getElementById("todoEmpty");
 
-// ==== STATE ====
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
-// ==== SAVE TODOS ====
 function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// ==== UPDATE COUNTER & EMPTY STATE ====
 function updateUI() {
   const activeCount = todos.filter(t => !t.completed).length;
   todoCount.textContent = `${activeCount} ${activeCount === 1 ? 'task' : 'tasks'} left`;
 
-  // Show/hide empty message
   if (todos.length === 0) {
     todoEmpty.style.display = "flex";
     todoList.style.display = "none";
@@ -126,8 +113,6 @@ function updateUI() {
     todoList.style.display = "block";
   }
 }
-
-// ==== RENDER TODOS ====
 function renderTodos() {
   todoList.innerHTML = "";
 
@@ -155,7 +140,6 @@ function renderTodos() {
   updateUI();
 }
 
-// ==== ADD TODO ====
 addTodoBtn.addEventListener("click", () => {
   const text = todoText.value.trim();
   if (text === "") return;
@@ -171,24 +155,20 @@ addTodoBtn.addEventListener("click", () => {
   renderTodos();
 });
 
-// Also allow Enter key
 todoText.addEventListener("keypress", (e) => {
   if (e.key === "Enter") addTodoBtn.click();
 });
 
-// ==== TOGGLE COMPLETE ====
 function toggleTodo(index) {
   todos[index].completed = !todos[index].completed;
   saveTodos();
   renderTodos();
 }
 
-// ==== DELETE TODO ====
 function deleteTodo(index) {
   todos.splice(index, 1);
   saveTodos();
   renderTodos();
 }
 
-// Initial render
 renderTodos();
