@@ -3,7 +3,7 @@ A fully responsive admin dashboard built using HTML, CSS, and JavaScript, featur
 interactive sales analytics charts, and a persistent Todo list powered by local storage.Base dashboard design inspired by the AdminHub Dashboard by Fajarnurwahid.
 
 ##  Live Demo
-Check out the project here: [View on Vercel] https://dashpro-admin-dashboard.vercel.app/
+Check out the project here:  https://dashpro-admin-dashboard.vercel.app/
 
 ### Features
 
