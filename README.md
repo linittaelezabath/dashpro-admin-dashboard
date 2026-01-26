@@ -7,22 +7,25 @@ Check out the project here:  https://dashpro-admin-dashboard.vercel.app/
 
 ### Features
 
-### Dashboard
-
+## Dashboard
 •	Overview cards for Orders, Visitors, and Sales
 •	Sales Analytics Line Chart using Chart.js
 •	Responsive layout for desktop, tablet, and mobile
+
  ## Sidebar Navigation
 •	Collapsible sidebar with smooth animations
 •	Active menu highlighting
 •	Icon-based navigation using Boxicons
+
  ## Dark Mode
 •	Toggle between Light & Dark themes
 •	CSS variables for easy theme management
+
 ## Navbar
 •	Search bar with mobile-friendly behavior
 •	Notification badge
 •	Profile avatar
+
  ## Todo List (Fully Functional)
 •	Add new tasks
 •	Mark tasks as completed
@@ -30,6 +33,7 @@ Check out the project here:  https://dashpro-admin-dashboard.vercel.app/
 •	Task counter (active tasks)
 •	Empty state UI
 •	Persistent data using localStorage
+
  ## Responsive Design
 Optimized for:
 •	Desktop
