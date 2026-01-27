@@ -41,6 +41,7 @@ Optimized for:
 •	Mobile devices
 •	Sidebar auto-hides on smaller screens
 
+
 ### Tech Stack
 •	HTML5 – Semantic structure
 •	CSS3 – Flexbox, Grid, Variables, Animations
@@ -62,10 +63,12 @@ AdminDashboard/
 │  
 └──ScreenShots
 
+
  ### Getting Started
 git clone https://github.com/your-username/admin-dashboard-todo-analytics.git
 Open index.html in your browser
 (No server or build tools required)
+
 
 ### What This Project Demonstrates
 •	Responsive UI design for admin dashboards
@@ -75,6 +78,7 @@ Open index.html in your browser
 •	State management using localStorage for persistent todos
 •	Chart.js integration for sales analytics visualization
 •	Real-world admin dashboard layout and navigation patterns
+
 
  ### Future Improvements
 •	Authentication (Login / Logout)
